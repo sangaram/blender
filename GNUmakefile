@@ -536,7 +536,7 @@ icons_geom: .FORCE
 	    "$(BLENDER_DIR)/release/datafiles/blender_icons_geom_update.py"
 
 update: .FORCE
-	$(PYTHON) ./build_files/utils/make_update.py
+	$(PYTHON) ./build_files/utils/make_update.py --no-libraries
 
 update_code: .FORCE
 	$(PYTHON) ./build_files/utils/make_update.py --no-libraries
